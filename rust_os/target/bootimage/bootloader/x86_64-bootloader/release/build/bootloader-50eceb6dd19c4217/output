@@ -1,0 +1,7 @@
+cargo:rerun-if-changed=/Users/ho-tomei/projects/rust/rust-os/rust_os/Cargo.toml
+cargo:rustc-link-search=native=/Users/ho-tomei/projects/rust/rust-os/rust_os/target/bootimage/bootloader/x86_64-bootloader/release/build/bootloader-50eceb6dd19c4217/out
+cargo:rustc-link-lib=static=kernel_bin-rust_os
+cargo:rerun-if-env-changed=KERNEL
+cargo:rerun-if-env-changed=KERNEL_MANIFEST
+cargo:rerun-if-changed=/Users/ho-tomei/projects/rust/rust-os/rust_os/target/x86_64-os/debug/rust_os
+cargo:rerun-if-changed=build.rs
