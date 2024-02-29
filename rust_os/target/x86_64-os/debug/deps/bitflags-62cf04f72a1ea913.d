@@ -1,0 +1,11 @@
+/Users/ho-tomei/projects/rust/rust-os/rust_os/target/x86_64-os/debug/deps/libbitflags-62cf04f72a1ea913.rmeta: /Users/ho-tomei/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bitflags-2.4.2/src/lib.rs /Users/ho-tomei/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bitflags-2.4.2/src/iter.rs /Users/ho-tomei/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bitflags-2.4.2/src/parser.rs /Users/ho-tomei/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bitflags-2.4.2/src/traits.rs /Users/ho-tomei/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bitflags-2.4.2/src/public.rs /Users/ho-tomei/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bitflags-2.4.2/src/internal.rs /Users/ho-tomei/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bitflags-2.4.2/src/external.rs
+
+/Users/ho-tomei/projects/rust/rust-os/rust_os/target/x86_64-os/debug/deps/bitflags-62cf04f72a1ea913.d: /Users/ho-tomei/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bitflags-2.4.2/src/lib.rs /Users/ho-tomei/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bitflags-2.4.2/src/iter.rs /Users/ho-tomei/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bitflags-2.4.2/src/parser.rs /Users/ho-tomei/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bitflags-2.4.2/src/traits.rs /Users/ho-tomei/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bitflags-2.4.2/src/public.rs /Users/ho-tomei/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bitflags-2.4.2/src/internal.rs /Users/ho-tomei/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bitflags-2.4.2/src/external.rs
+
+/Users/ho-tomei/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bitflags-2.4.2/src/lib.rs:
+/Users/ho-tomei/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bitflags-2.4.2/src/iter.rs:
+/Users/ho-tomei/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bitflags-2.4.2/src/parser.rs:
+/Users/ho-tomei/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bitflags-2.4.2/src/traits.rs:
+/Users/ho-tomei/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bitflags-2.4.2/src/public.rs:
+/Users/ho-tomei/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bitflags-2.4.2/src/internal.rs:
+/Users/ho-tomei/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bitflags-2.4.2/src/external.rs:
