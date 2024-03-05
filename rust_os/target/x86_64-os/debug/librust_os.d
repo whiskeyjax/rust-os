@@ -1,0 +1,1 @@
+/Users/ho-tomei/projects/rust/rust-os/rust_os/target/x86_64-os/debug/librust_os.rlib: /Users/ho-tomei/projects/rust/rust-os/rust_os/src/lib.rs /Users/ho-tomei/projects/rust/rust-os/rust_os/src/serial.rs /Users/ho-tomei/projects/rust/rust-os/rust_os/src/vga_buffer.rs
