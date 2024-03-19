@@ -1,5 +1,3 @@
-// in src/main.rs
-
 #![no_std]
 #![no_main]
 #![feature(custom_test_frameworks)]
@@ -12,6 +10,9 @@ use rust_os::println;
 #[no_mangle]
 pub extern "C" fn _start() -> ! {
     println!("Hello World{}", "!");
+
+    rust_os::init();
+    x86_64::instructions::interrupts::int3();
 
     #[cfg(test)]
     test_main();
