@@ -7,7 +7,7 @@
 #![reexport_test_harness_main = "test_main"]
 pub mod serial;
 pub mod interrupts;
-
+pub mod gdt;
 pub mod vga_buffer;
 use core::panic::PanicInfo;
 
@@ -72,5 +72,7 @@ pub fn exit_qemu(exit_code: QemuExitCode) {
 }
 
 pub fn init(){
-    interrupts::init_idt()
+    gdt::init();
+    interrupts::init_idt();
+
 }
