@@ -1,8 +1,9 @@
 use core::fmt::Write;
 use core::fmt::{self};
 use lazy_static::lazy_static;
-use volatile::Volatile;
 use spin::Mutex;
+use volatile::Volatile;
+use x86_64::instructions::interrupts;
 
 impl fmt::Write for Writer {
     fn write_str(&mut self, s: &str) -> fmt::Result {
@@ -136,6 +137,7 @@ macro_rules! println {
 #[doc(hidden)]
 pub fn _print(args: fmt::Arguments) {
     WRITER.lock().write_fmt(args).unwrap();
+    interrupts::without_interrupts(|| WRITER.lock().write_fmt(args).unwrap())
 }
 
 #[test_case]

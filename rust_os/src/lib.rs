@@ -1,13 +1,12 @@
 #![feature(abi_x86_interrupt)]
-
 #![no_std]
 #![cfg_attr(test, no_main)]
 #![feature(custom_test_frameworks)]
 #![test_runner(crate::test_runner)]
 #![reexport_test_harness_main = "test_main"]
-pub mod serial;
-pub mod interrupts;
 pub mod gdt;
+pub mod interrupts;
+pub mod serial;
 pub mod vga_buffer;
 use core::panic::PanicInfo;
 
@@ -55,7 +54,6 @@ fn panic(info: &PanicInfo) -> ! {
     test_panic_handler(info)
 }
 
-
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
 #[repr(u32)]
 pub enum QemuExitCode {
@@ -71,8 +69,15 @@ pub fn exit_qemu(exit_code: QemuExitCode) {
     }
 }
 
-pub fn init(){
+pub fn init() {
     gdt::init();
     interrupts::init_idt();
+    unsafe { interrupts::PICS.lock().initialize() }
+    x86_64::instructions::interrupts::enable();
+}
 
+pub fn hlt_loop() -> ! {
+    loop {
+        x86_64::instructions::hlt();
+    }
 }
